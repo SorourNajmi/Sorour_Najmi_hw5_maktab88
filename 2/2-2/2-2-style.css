@@ -1,0 +1,109 @@
+:root {
+    --h: 600px;
+    --m1: 8px;
+    --color0: #fff9e6;
+}
+.container {
+    margin-top: 0.5rem;
+    background-color: #433a35;
+    width: calc(var(--h)*0.875);
+    height: calc(var(--h));
+    margin-left: auto;
+    margin-right: auto;
+}
+.box1 {
+    background-color: var(--color0);
+    width: 50px;
+    height: 50px;
+    margin-top: calc(var(--m1));
+    margin-right: calc(var(--m1)*1.625);
+    margin-bottom: calc(var(--m1)*2.75);
+    margin-left: calc(var(--m1));
+    width: calc((var(--h)*0.875 - 2*var(--m1) - var(--m1)*1.625)*3.5/10.5);
+    height: calc((100% - var(--m1)*2.75)*3.7/8.3);
+}
+.box2 {
+    background-color: var(--color0);
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    margin-right: calc(var(--m1)*1.625);
+    margin-bottom: calc(var(--m1)*1.625);
+    margin-left: calc(var(--m1));
+    width: calc((var(--h)*0.875 - 2*var(--m1) - var(--m1)*1.625)*3.5/10.5);
+    height: calc((100% - var(--m1)*2.75)*4.6/8.3);
+}
+.box3 {
+    background-color: #fe121c;
+    width: 50px;
+    height: 50px;
+    margin-top: calc(var(--m1));
+    margin-right: calc(var(--m1));
+    margin-bottom: calc(var(--m1)*1.625);
+    margin-left: 0;
+    width: calc((var(--h)*0.875 - 2*var(--m1) - var(--m1)*1.625)*7/10.5);
+    height: calc((var(--h) - var(--m1)*2 - var(--m1)*1.625 )*9/12.5);
+}
+.box4 {
+    background-color: #199cc8;
+    width: 50px;
+    height: 50px;
+    clear: left;
+    margin-top: 0;
+    margin-right: calc(var(--m1)*1.625);
+    margin-bottom: calc(var(--m1));
+    margin-left: calc(var(--m1));
+    width: calc((var(--h)*0.875 - 2*var(--m1) - var(--m1)*1.625)*3.5/10.5);
+    height: calc((var(--h) - var(--m1)*2 - var(--m1)*1.625 )*3.5/12.5);
+    clear: left;
+}
+.box5 {
+    background-color: var(--color0);
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    margin-right: calc(var(--m1)*2.25);
+    margin-bottom: calc(var(--m1));
+    margin-left: 0;
+    width: calc((100% - var(--m1)*2.25)*5.6/6.6);
+    height: 100%;
+}
+.box6 {
+    background-color: var(--color0);
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    margin-right: calc(var(--m1));
+    margin-bottom: calc(var(--m1)*2.75);
+    margin-left: 0;
+    height: calc((100% - var(--m1)*2.75)/2);
+}
+.box7 {
+    background-color: #fdfc00;
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    margin-right: calc(var(--m1));
+    margin-bottom: calc(var(--m1));
+    margin-left: 0;
+    height: calc((100% - var(--m1)*2.75)/2);
+}
+.float {
+    float: left;
+}
+.group1 {
+    height: calc((var(--h) - var(--m1)*2 - var(--m1)*1.625 )*9/12.5);
+}
+.group2 {
+    width: calc((var(--h)*0.875 - 2*var(--m1) - var(--m1)*1.625)*7/10.5);
+    height: calc((var(--h) - var(--m1)*2 - var(--m1)*1.625 )*3.5/12.5);
+}
+.group3 {
+    height: 100%;
+    width: calc((100% - var(--m1)*2.25)*1.0/6.6);
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
