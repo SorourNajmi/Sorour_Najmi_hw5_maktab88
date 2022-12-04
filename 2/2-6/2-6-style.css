@@ -77,9 +77,10 @@ a {
 }
 .text {
     position: absolute;
-    left: 80px;
     top: 50%;
     transform: translate(0, -50%);
+    left: 48%;
+    transform: translate(-100%, 0);
     /* float: left; */
     width: 28rem;
     /* margin-left: 9vw;
@@ -101,9 +102,10 @@ a {
 }
 img {
     position: absolute;
-    right: 80px;
-    top: 50%;
+    top: 35%;
     transform: translate(0, -50%);
+    right: 50%;
+    transform: translate(100%, 0);
 }
 p {
     margin-top: 13px;
