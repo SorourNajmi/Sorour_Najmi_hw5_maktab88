@@ -8,7 +8,7 @@ function flatenArray(arr) {
     function flat(arr) {
         for (let element of arr) {
             if (!Array.isArray(element)) {
-                flatArray = flatArray.concat([element]);
+                flatArray.push(element);
             } else {
                 flat(element);
             }

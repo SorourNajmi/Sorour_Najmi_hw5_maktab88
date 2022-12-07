@@ -8,8 +8,8 @@ function printPeerToPeer(arr) {
         if (typeof(item) !== 'string') throw new Error("Not a string!");
         const itemArr = item.split('-');
         if (itemArr.length !== len) throw new Error("Invalid size!");
-        for (let i = 0; i < itemArr.length; i++) {
-            if (result[i] === undefined) result = result.concat([[]]);
+        for (let i = 0; i < len; i++) {
+            if (result[i] === undefined) result.push([]);
             if (!result[i].includes(itemArr[i])) result[i].push(itemArr[i]);
         }
     }
