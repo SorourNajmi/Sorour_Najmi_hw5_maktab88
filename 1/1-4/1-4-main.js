@@ -1,5 +1,5 @@
 console.log(case_insensitive_search('hello world', 'Hello'));
-console.log(case_insensitive_search('hello world', 'hello'));
+console.log(case_insensitive_search('hello world', 'he'));
 console.log(case_insensitive_search('hello world', 'hi'));
 
 function case_insensitive_search(str, word) {

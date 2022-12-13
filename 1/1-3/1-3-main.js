@@ -1,11 +1,13 @@
 
-console.log(separators(1000));
+console.log(separators(100));
 console.log(separators(-20301548));
 console.log(separators(+2467.65));
 
 function separators(numb) {
     if (isNaN(numb)) throw new Error("Not a number!");
+    if (!Number.isInteger(numb)) throw new Error("Invalid number!");
     let separatedStr = String(numb);
+    if (separatedStr.length <= 3) return numb;
     let flagFloat = false;
     let floatArr = [];
     let signStr = '';

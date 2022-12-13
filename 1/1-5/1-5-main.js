@@ -1,4 +1,4 @@
-console.log(printPeerToPeer(["a-b-c-d", "a-b-f-g", "m-n-l-k", "m-o-p-j", "v-q-w-e", "x-z-p-j"]));
+console.log(printPeerToPeer(["a-b-c-d", "a-b-f-g", "y-n-l-k", "m-o-p-j", "v-q-w-e", "x-z-p-j"]));
 
 function printPeerToPeer(arr) {
     if (!Array.isArray(arr)) throw new Error("Not an array!");
